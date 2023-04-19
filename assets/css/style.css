@@ -1,0 +1,71 @@
+* {
+	font-family: Arial, sans-serif;
+	font-size: 22px;
+	color: whitesmoke;
+}
+
+body {
+	background-color: #222222;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*Reloj*/
+
+.reloj {
+	width: 200px;
+	height: 200px;
+	border: 2px solid whitesmoke;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.manecillas {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform-origin: bottom center;
+	background-color: whitesmoke;
+}
+
+#hora {
+	width: 4px;
+	height: 60px;
+	transform: translateX(-50%) rotate(0deg);
+}
+
+#minutos {
+	width: 2px;
+	height: 80px;
+	transform: translateX(-50%) rotate(0deg);
+}
+
+#segundos {
+	width: 1px;
+	height: 100px;
+	transform: translateX(-50%) rotate(0deg);
+	background-color: rgb(134, 25, 25);
+}
+
+/*Calendario*/
+
+#calendario {
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: flex;
+
+	text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#diaNum,
+#diaSemana,
+#mes,
+#anio {
+	margin: 5px 0;
+}
